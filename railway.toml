@@ -1,6 +1,6 @@
 [build]
 builder = "nixpacks"
-buildCommand = "cd apps/studio && pnpm install && SKIP_UPLOAD_STATIC_ASSETS=true pnpm build"
+buildCommand = "npm install -g pnpm@9.15.5 && cd apps/studio && pnpm install && SKIP_UPLOAD_STATIC_ASSETS=true pnpm build"
 
 [deploy]
 startCommand = "cd apps/studio && pnpm start"
